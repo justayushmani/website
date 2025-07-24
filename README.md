@@ -2,7 +2,9 @@
 
 Welcome to the source code repository for Zenyukti in testing version
 
-**🚀 Live Site: (https://avinash-394.github.io)**
+**🚀 Live Site: <a href= "https://avinash-394.github.io " target="_blank" rel="noopener noreferrer">
+   https://avinash-394.github.io
+</a>**
 
 ---
 
