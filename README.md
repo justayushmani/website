@@ -23,7 +23,7 @@ Before you begin, ensure you have the following installed on your system:
 
 1.  **Clone the repository to your local machine.**
     ```sh
-    git clone (https://github.com/avinash-394/avinash-394.github.io)
+    git clone https://github.com/avinash-394/avinash-394.github.io
     ```
 
 2.  **Navigate into the project directory.**
