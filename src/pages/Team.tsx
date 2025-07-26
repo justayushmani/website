@@ -64,7 +64,7 @@ const Team = () => {
     // Founder
     {
       id: "ayush-sharma",
-      name: "Ayush Hardeniya\n(Legal Name: Ayush Sharma)",
+      name: "Ayush Hardeniya<br />(Legal Name: Ayush Sharma)",
       year: "2nd year",
       role: "Founder & Executive Head",
       email: "connect@ayushhardeniya.site",
