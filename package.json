@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "deploy": "vite build && gh-pages -d dist"
   },
-  "homepage": "https://github.com/ZenYukti/website",
+  "homepage": "https://zeenyukti.github.io/website",
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-accordion": "^1.2.0",

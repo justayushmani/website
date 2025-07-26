@@ -64,15 +64,15 @@ const Team = () => {
     // Founder
     {
       id: "ayush-sharma",
-      name: "Ayush Sharma (Ayush Hardeniya)",
+      name: "Ayush Hardeniya\n(Legal Name: Ayush Sharma)",
       year: "2nd year",
-      role: "Founder & Lead",
-      email: "work@ayushhardeniya.site",
+      role: "Founder & Executive Head",
+      email: "connect@ayushhardeniya.site",
       github: "https://github.com/ayushHardeniya",
       linkedin: "https://linkedin.com/in/ayushHardeniya",
       instagram: "https://instagram.com/ayush.hardeniya",
       discord: "https://discordapp.com/users/1372593502235525322",
-      bio: "Passionate about building communities and democratizing tech education.",
+      bio: "Driven to inspire collaboration and growth, building success together.",
       avatar: "https://ayushhardeniya.site/assets/portfolio/prof-image.png",
       isFounder: true,
     },
@@ -152,7 +152,7 @@ const Team = () => {
 
     {
       id: "mohd-abbas",
-      name: "Mohd Abbas",
+      name: "Mohd. Abbas",
       year: "2nd year",
       role: "Design & Creative Co-Lead",
       email: "mr.mohdabbaszaidi@gmail.com",
