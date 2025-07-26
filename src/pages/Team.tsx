@@ -64,7 +64,8 @@ const Team = () => {
     // Founder
     {
       id: "ayush-sharma",
-      name: "Ayush Hardeniya<br />(Legal Name: Ayush Sharma)",
+      name: "Ayush Hardeniya",
+      subname: "(Legal Name: Ayush Sharma)",
       year: "2nd year",
       role: "Founder & Executive Head",
       email: "connect@ayushhardeniya.site",
@@ -369,6 +370,9 @@ const Team = () => {
                     <h3 className="text-2xl font-bold text-foreground mb-2">
                       {founder.name}
                     </h3>
+                    <h6 className="text-2x1 text-foreground mb-2.5">
+                      {founder.subname}
+                    </h6>
                     <p className="text-lg text-primary mb-2">{founder.role}</p>
                     <p className="text-muted-foreground mb-4">{founder.year}</p>
                     {founder.bio && (
