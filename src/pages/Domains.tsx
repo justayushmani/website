@@ -47,8 +47,9 @@ const Domains = () => {
         {/* Hero Section */}
         <section className="py-20 px-4">
           <div className="container mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-6">
-              Our Domains
+            <h1 className="font-display font-bold text-5xl sm:text-6xl lg:text-7xl leading-tight mb-6">
+              <span className="text-foreground">Our </span>
+              <span className="bg-gradient-primary bg-clip-text text-transparent"> Domains</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
               Choose your path in the ZenYukti community. Whether you're here to learn, 

@@ -66,8 +66,9 @@ const Contact = () => {
         {/* Hero Section */}
         <section className="py-20 px-4">
           <div className="container mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-6">
-              Get In Touch
+            <h1 className="font-display font-bold text-5xl sm:text-6xl lg:text-7xl leading-tight mb-6">
+              <span className="text-foreground">Get In</span>
+              <span className="bg-gradient-primary bg-clip-text text-transparent"> Touch</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
               Have questions, ideas, or want to collaborate? We'd love to hear from you. 
