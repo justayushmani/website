@@ -13,21 +13,28 @@ const Hero = () => {
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Heading */}
           <h1 className="font-display font-bold text-5xl sm:text-6xl lg:text-7xl leading-tight mb-6">
-            <span className="text-foreground">ZenYukti</span>
+            <span className="text-foreground"> Welcome to
+               <span className="bg-gradient-primary bg-clip-text text-transparent"> ZenYukti</span>
+            </span>
             <br />
+          </h1>
+          {/*
+          <h3 className="font-display font-bold text-3xl sm:text-4xl lg:text-4xl leading-tight mb-6">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Learn. Build. Share.
             </span>
-          </h1>
+          </h3> */}
+          <br />
 
           {/* Subheading */}
           <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Not just another club — a movement for all. 
-            <span className="text-neon-green font-semibold"> Student-led initiative</span> enabling 
+            {/*Not just another club/society — a movement for all.*/}
+            <span className="text-neon-green font-semibold"> Student-led initiative</span>, enabling 
             community-driven growth in tech.
           </p>
 
-          {/* Stats Banner */}
+
+          {/* Stats Banner 
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8">
               <div className="text-center">
@@ -45,7 +52,8 @@ const Hero = () => {
                 <div className="text-sm text-muted-foreground">We Build For</div>
               </div>
             </div>
-          </div>
+          </div> */}
+
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

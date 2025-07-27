@@ -35,12 +35,14 @@ All colors MUST be HSL.
 
     --border: 217 32.6% 17.5%;
     --input: 217 32.6% 17.5%;
-    --ring: 142 76% 36%;
+    /*--ring: 142 76% 36%;*/
+    --ring: 280 70% 35%;
 
     --radius: 0.75rem;
 
     /* Custom ZenYukti Colors */
-    --neon-green: 142 76% 36%;
+    --neon-green: 280 70% 35%;
+   /* --neon-green: 142 76% 36%; */
     --neon-purple: 263 85% 62%;
     --neon-blue: 199 89% 48%;
     --dark-surface: 225 25% 8%;

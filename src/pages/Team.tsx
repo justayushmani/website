@@ -86,57 +86,7 @@ const Team = () => {
       email: "ksharma17052005@gmail.com",
       discord: "https://discordapp.com/users/1350110343271153724",
     },
-    {
-      id: "avishi-sharma",
-      name: "Avishi Sharma",
-      year: "2nd year",
-      role: "PR & Outreach Lead",
-      email: "avishisharma50@gmail.com",
-      github: "https://github.com/avishisharma08",
-      linkedin: "https://www.linkedin.com/in/avishi-sharma-12a2a2322",
-      instagram: "https://instagram.com/avishisharma06",
-      discord: "https://discordapp.com/users/1288525929907224616",
-      avatar:
-        "https://media.licdn.com/dms/image/v2/D5603AQFKEvZS3Q1-DA/profile-displayphoto-scale_200_200/B56ZfBW7gqH8Ag-/0/1751295705968?e=1756339200&v=beta&t=LluMeTEacpzEHxi6Xj-VYEGYwZTOQ1ob3uS0LyDnY1w",
-    },
-    {
-      id: "anvita-shukla",
-      name: "Anvita Shukla",
-      year: "2nd year",
-      role: "Design & Creative Lead",
-      email: "anvitashukla2006@gmail.com",
-      github: "https://github.com/ANVITA1126",
-      linkedin: "https://www.linkedin.com/in/anvita-shukla-96a396308",
-      discord: "https://discordapp.com/users/1374585138029006909",
-      avatar:
-        "https://media.licdn.com/dms/image/v2/D5603AQH4IrOB7ntM5w/profile-displayphoto-shrink_200_200/B56ZU4BBH2HEAY-/0/1740401546952?e=1756339200&v=beta&t=szltshJcKNTsBMdpJlTMT4kX2c3tzjr6F6rJ7Rp9Xh0",
-    },
-    {
-      id: "ayush-shukla",
-      name: "Ayush Shukla",
-      year: "2nd year",
-      role: "Social Media Lead",
-      email: "nitianayush4141@gmail.com",
-      github: "https://github.com/Ayushukla7",
-      linkedin: "https://www.linkedin.com/in/ayush-shukla-844abb313",
-      instagram: "https://instagram.com/ayushs_4141",
-      discord: "https://discordapp.com/users/1377673941438562456",
-      avatar:
-        "https://media.licdn.com/dms/image/v2/D5603AQHbYXS61wFHoA/profile-displayphoto-shrink_200_200/B56ZWFOlJGHsAY-/0/1741696947894?e=1756339200&v=beta&t=Dwj3UAUlCx4hXCYwEu_elDiLhv9OfuZlfe8_BsUVja8",
-    },
-    {
-      id: "anand-vashishtha",
-      name: "Anand Vashishtha",
-      year: "2nd year",
-      role: "Tech & Dev Co-Lead",
-      email: "anandcollege07@gmail.com",
-      github: "https://github.com/Anand-0037",
-      instagram: "https://instagram.com/anand_vash_03",
-      discord: "https://discordapp.com/users/1256244561517482077",
-      linkedin: "https://www.linkedin.com/in/anand-vashishtha-aba64b255",
-      avatar:
-        "https://media.licdn.com/dms/image/v2/D4D03AQELZjyaJ3LGiQ/profile-displayphoto-shrink_200_200/B4DZPImxA4HUAY-/0/1734237426910?e=1756339200&v=beta&t=f6WSU1Cd6P6oupgSP0dx_eVCwPU1XlvN9gCRvY0XTfA",
-    },
+
     {
       id: "ayush-raj",
       name: "AyRaj",
@@ -152,17 +102,58 @@ const Team = () => {
     },
 
     {
-      id: "mohd-abbas",
-      name: "Mohd. Abbas",
+      id: "avishi-sharma",
+      name: "Avishi Sharma",
       year: "2nd year",
-      role: "Design & Creative Co-Lead",
-      email: "mr.mohdabbaszaidi@gmail.com",
-      github: "https://github.com/homiethissid3",
-      linkedin: "https://www.linkedin.com/in/mohd-abbas-84786920b",
-      instagram: "https://instagram.com/click_by_abbas",
-      discord: "https://discordapp.com/users/1364631551039766528",
+      role: "PR & Outreach Lead",
+      email: "avishisharma50@gmail.com",
+      github: "https://github.com/avishisharma08",
+      linkedin: "https://www.linkedin.com/in/avishi-sharma-12a2a2322",
+      instagram: "https://instagram.com/avishisharma06",
+      discord: "https://discordapp.com/users/1288525929907224616",
       avatar:
-        "https://media.licdn.com/dms/image/v2/D4D03AQGwj_sp7C8BVA/profile-displayphoto-shrink_200_200/B4DZahFcwkH0AY-/0/1746459284085?e=1756339200&v=beta&t=v9ioLYMoZBUOJwFTY3sr1DQ4D7l4pnmgmwWaTauDq4c",
+        "https://media.licdn.com/dms/image/v2/D5603AQFKEvZS3Q1-DA/profile-displayphoto-scale_200_200/B56ZfBW7gqH8Ag-/0/1751295705968?e=1756339200&v=beta&t=LluMeTEacpzEHxi6Xj-VYEGYwZTOQ1ob3uS0LyDnY1w",
+    },
+
+    {
+      id: "ayush-shukla",
+      name: "Ayush Shukla",
+      year: "2nd year",
+      role: "Social Media Lead",
+      email: "nitianayush4141@gmail.com",
+      github: "https://github.com/Ayushukla7",
+      linkedin: "https://www.linkedin.com/in/ayush-shukla-844abb313",
+      instagram: "https://instagram.com/ayushs_4141",
+      discord: "https://discordapp.com/users/1377673941438562456",
+      avatar:
+        "https://media.licdn.com/dms/image/v2/D5603AQHbYXS61wFHoA/profile-displayphoto-shrink_200_200/B56ZWFOlJGHsAY-/0/1741696947894?e=1756339200&v=beta&t=Dwj3UAUlCx4hXCYwEu_elDiLhv9OfuZlfe8_BsUVja8",
+    },
+
+    {
+      id: "anvita-shukla",
+      name: "Anvita Shukla",
+      year: "2nd year",
+      role: "Design & Creative Lead",
+      email: "anvitashukla2006@gmail.com",
+      github: "https://github.com/ANVITA1126",
+      linkedin: "https://www.linkedin.com/in/anvita-shukla-96a396308",
+      discord: "https://discordapp.com/users/1374585138029006909",
+      avatar:
+        "https://media.licdn.com/dms/image/v2/D5603AQH4IrOB7ntM5w/profile-displayphoto-shrink_200_200/B56ZU4BBH2HEAY-/0/1740401546952?e=1756339200&v=beta&t=szltshJcKNTsBMdpJlTMT4kX2c3tzjr6F6rJ7Rp9Xh0",
+    },
+
+    {
+      id: "avinash-shukla",
+      name: "Avinash Kumar Shukla",
+      year: "2nd year",
+      role: "Operations Co-Lead",
+      email: "avinashshukla.dev@gmail.com",
+      github: "https://github.com/avinash-394",
+      linkedin: "https://www.linkedin.com/in/avinashshukla394/",
+      instagram: "https://instagram.com/avinash.shukla04",
+      discord: "https://discordapp.com/users/509685531291025419",
+      avatar:
+        "https://media.licdn.com/dms/image/v2/D5603AQG1nzHhYYAsVg/profile-displayphoto-shrink_200_200/B56ZUn3SSRHsAY-/0/1740130560580?e=1756339200&v=beta&t=wJEYH-H53UdZsDEWJEP0n94FXt02_BGdy53UDvLreDw",
     },
 
     {
@@ -180,18 +171,31 @@ const Team = () => {
     },
 
     {
-      id: "avinash-shukla",
-      name: "Avinash Kumar Shukla",
+      id: "anand-vashishtha",
+      name: "Anand Vashishtha",
       year: "2nd year",
-      role: "Operations Co-Lead",
-      email: "avinashshukla.dev@gmail.com",
-      github: "https://github.com/avinash-394",
-      linkedin: "https://www.linkedin.com/in/avinashshukla394/",
-      instagram: "https://instagram.com/avinash.shukla04",
-      discord: "https://discordapp.com/users/509685531291025419",
+      email: "anandcollege07@gmail.com",
+      github: "https://github.com/Anand-0037",
+      instagram: "https://instagram.com/anand_vash_03",
+      discord: "https://discordapp.com/users/1256244561517482077",
+      linkedin: "https://www.linkedin.com/in/anand-vashishtha-aba64b255",
       avatar:
-        "https://media.licdn.com/dms/image/v2/D5603AQG1nzHhYYAsVg/profile-displayphoto-shrink_200_200/B56ZUn3SSRHsAY-/0/1740130560580?e=1756339200&v=beta&t=wJEYH-H53UdZsDEWJEP0n94FXt02_BGdy53UDvLreDw",
+        "https://media.licdn.com/dms/image/v2/D4D03AQELZjyaJ3LGiQ/profile-displayphoto-shrink_200_200/B4DZPImxA4HUAY-/0/1734237426910?e=1756339200&v=beta&t=f6WSU1Cd6P6oupgSP0dx_eVCwPU1XlvN9gCRvY0XTfA",
     },
+
+    {
+      id: "mohd-abbas",
+      name: "Mohd. Abbas",
+      year: "2nd year",
+      email: "mr.mohdabbaszaidi@gmail.com",
+      github: "https://github.com/homiethissid3",
+      linkedin: "https://www.linkedin.com/in/mohd-abbas-84786920b",
+      instagram: "https://instagram.com/click_by_abbas",
+      discord: "https://discordapp.com/users/1364631551039766528",
+      avatar:
+        "https://media.licdn.com/dms/image/v2/D4D03AQGwj_sp7C8BVA/profile-displayphoto-shrink_200_200/B4DZahFcwkH0AY-/0/1746459284085?e=1756339200&v=beta&t=v9ioLYMoZBUOJwFTY3sr1DQ4D7l4pnmgmwWaTauDq4c",
+    },
+
   ];
 
   /**
@@ -305,7 +309,8 @@ const Team = () => {
             <div className="grid md:grid-cols-3 gap-6 max-w-2xl mx-auto">
               <div className="text-center">
                 <div className="text-3xl font-bold text-neon-green mb-2">
-                  {teamMembers.length}
+                  {/*{teamMembers.length}*/} {/*Dynamic handler, don't remove it until our core team is small*/}
+                  10+
                 </div>
                 <div className="text-muted-foreground">Team Members</div>
               </div>
@@ -409,7 +414,7 @@ const Team = () => {
           <div className="container mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-                Core Team
+                ZenCrew • The Core Team
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 The dedicated individuals working together to build and grow the

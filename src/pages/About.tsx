@@ -5,30 +5,30 @@ import { Target, Eye, Heart, Users, Code, Share2 } from "lucide-react";
 
 const About = () => {
   const timeline = [
-    {
-      phase: "Foundation",
-      period: "Q1 2024",
-      description: "Started as a response to limited opportunities for students",
-      status: "completed"
-    },
-    {
-      phase: "Community Growth",
-      period: "Q2 2024",
-      description: "Reached 100+ active members across different domains",
-      status: "completed"
-    },
-    {
-      phase: "Project Launch",
-      period: "Q3 2024",
-      description: "Launched first set of open-source projects",
-      status: "current"
-    },
-    {
-      phase: "Platform Expansion",
-      period: "Q4 2024",
-      description: "Advanced matchmaking and mentorship programs",
-      status: "upcoming"
-    }
+      {
+        "phase": "Concept & Foundation",
+        "period": "May-June 2025",
+        "description": "Initial ideation, defining core values, and outlining community structure.",
+        "status": "completed"
+      },
+      {
+        "phase": "Core Team Formation",
+        "period": "July 2025",
+        "description": "Bringing together passionate individuals to lead and shape the community's early stages.",
+        "status": "completed"
+      },
+      {
+        "phase": "Community Soft Launch",
+        "period": "July-August 2025",
+        "description": "Officially opening doors to a wider audience and initiating initial community activities.",
+        "status": "upcoming"
+      },
+      {
+        "phase": "Growth & Engagement Initiatives",
+        "period": "Q4 2025",
+        "description": "Implementing programs, events, and resources to foster active participation and growth.",
+        "status": "upcoming"
+      },
   ];
 
   const values = [
@@ -70,16 +70,9 @@ const About = () => {
             </p>
             <div className="text-center">
               <p className="text-lg text-muted-foreground mb-2">Founded by</p>
-              <p className="text-xl font-semibold text-primary">Ayush Sharma (Ayush Hardeniya)</p>
-              <p className="text-md text-muted-foreground">2nd year • 
-                <a 
-                  href="mailto:work@ayushhardeniya.site" 
-                  className="text-primary hover:underline ml-1"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  work@ayushhardeniya.site
-                </a>
+              <p className="text-xl font-semibold text-primary">Ayush Hardeniya</p>
+              <p className="text-md text-muted-foreground"><a href="https://ayushhardeniya.site/" target="_blank" rel="noopener noreferrer">
+                [www.ayushhardeniya.site] </a>
               </p>
             </div>
           </div>

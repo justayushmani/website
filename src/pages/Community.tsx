@@ -9,21 +9,21 @@ const Community = () => {
     {
       name: "LinkedIn",
       icon: Linkedin,
-      followers: "2.5K+",
+      //followers: "2.5K+",
       description: "Professional updates and industry insights",
       color: "text-blue-400"
     },
     {
       name: "Instagram", 
       icon: Instagram,
-      followers: "1.8K+",
+      //followers: "1.8K+",
       description: "Behind the scenes and community highlights",
       color: "text-pink-400"
     },
     {
       name: "Twitter",
       icon: Twitter,
-      followers: "1.2K+", 
+      //followers: "1.2K+", 
       description: "Quick updates and tech discussions",
       color: "text-blue-400"
     }
@@ -31,12 +31,12 @@ const Community = () => {
 
   const teamRoles = [
     {
-      role: "Social Media Manager",
+      role: "Social Media Department",
       description: "Manages our online presence across all platforms",
       responsibilities: ["Content strategy", "Community engagement", "Analytics tracking"]
     },
     {
-      role: "Graphics Department",
+      role: "Graphics & Creative Department",
       description: "Creates visual content and brand materials", 
       responsibilities: ["Social media graphics", "Event posters", "Brand identity"]
     },
