@@ -40,10 +40,12 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-xl">Z</span>
+              <div className="w-11 h-11 rounded-full overflow-hidden">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4D0BAQHGv2tcJ0RJ3w/company-logo_200_200/B4DZe1rfTUH4AM-/0/1751099766431/zenyukti_logo?e=1756339200&v=beta&t=c7qvMZeqv1azXKXbEdylE8y6j1yO6zdpX71hQiu8hco"
+                alt="zenyukti_logo" className="w-full h-full object-cover"/>
               </div>
-              <span className="font-display font-bold text-2xl text-foreground">
+              <span className="font-display font-bold text-3xl text-foreground">
                 ZenYukti
               </span>
             </div>

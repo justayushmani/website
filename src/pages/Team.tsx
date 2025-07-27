@@ -13,6 +13,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Users, Heart } from "lucide-react";
+import teamMembersk from "@/assets/teamdata/teamdata.json";
 import {
   PiUsersThreeLight,
   SiDiscord,
@@ -29,6 +30,7 @@ import {
 interface TeamMember {
   id: string;
   name: string;
+  subname?: string;
   year: string;
   role?: string;
   email: string;
@@ -60,143 +62,8 @@ const Team = () => {
    * Core team members data
    * Contains all team member information with exact details as provided
    */
-  const teamMembers: TeamMember[] = [
-    // Founder
-    {
-      id: "ayush-sharma",
-      name: "Ayush Hardeniya",
-      subname: "(Legal Name: Ayush Sharma)",
-      year: "2nd year",
-      role: "Founder & Executive Head",
-      email: "connect@ayushhardeniya.site",
-      github: "https://github.com/ayushHardeniya",
-      linkedin: "https://linkedin.com/in/ayushHardeniya",
-      instagram: "https://instagram.com/ayush.hardeniya",
-      discord: "https://discordapp.com/users/1372593502235525322",
-      bio: "Driven to inspire collaboration and growth, building success together.",
-      avatar: "https://ayushhardeniya.site/assets/portfolio/prof-image.png",
-      isFounder: true,
-    },
-    // Core team members
-    {
-      id: "kaushal",
-      name: "Kaushal",
-      year: "3rd year",
-      role: "Tech & Dev Lead",
-      email: "ksharma17052005@gmail.com",
-      discord: "https://discordapp.com/users/1350110343271153724",
-    },
-
-    {
-      id: "ayush-raj",
-      name: "AyRaj",
-      year: "2nd year",
-      role: "Tech & Dev Co-Lead",
-      email: "ayushr94150@gmail.com",
-      github: "https://github.com/ayushraaj-01",
-      linkedin: "https://www.linkedin.com/in/ayush-raj-3849a1335",
-      instagram: "https://instagram.com/ayush_raj2004",
-      discord: "https://discordapp.com/users/1277273474104295504",
-      avatar:
-        "https://media.licdn.com/dms/image/v2/D5603AQE4BbHYOjtD6w/profile-displayphoto-shrink_200_200/B56ZcSx8bCG0AY-/0/1748366773137?e=1756339200&v=beta&t=recR-bW2CkaLXCGR2iz8VGDSxgtX-WNXo4lYvskaXsQ",
-    },
-
-    {
-      id: "avishi-sharma",
-      name: "Avishi Sharma",
-      year: "2nd year",
-      role: "PR & Outreach Lead",
-      email: "avishisharma50@gmail.com",
-      github: "https://github.com/avishisharma08",
-      linkedin: "https://www.linkedin.com/in/avishi-sharma-12a2a2322",
-      instagram: "https://instagram.com/avishisharma06",
-      discord: "https://discordapp.com/users/1288525929907224616",
-      avatar:
-        "https://media.licdn.com/dms/image/v2/D5603AQFKEvZS3Q1-DA/profile-displayphoto-scale_200_200/B56ZfBW7gqH8Ag-/0/1751295705968?e=1756339200&v=beta&t=LluMeTEacpzEHxi6Xj-VYEGYwZTOQ1ob3uS0LyDnY1w",
-    },
-
-    {
-      id: "ayush-shukla",
-      name: "Ayush Shukla",
-      year: "2nd year",
-      role: "Social Media Lead",
-      email: "nitianayush4141@gmail.com",
-      github: "https://github.com/Ayushukla7",
-      linkedin: "https://www.linkedin.com/in/ayush-shukla-844abb313",
-      instagram: "https://instagram.com/ayushs_4141",
-      discord: "https://discordapp.com/users/1377673941438562456",
-      avatar:
-        "https://media.licdn.com/dms/image/v2/D5603AQHbYXS61wFHoA/profile-displayphoto-shrink_200_200/B56ZWFOlJGHsAY-/0/1741696947894?e=1756339200&v=beta&t=Dwj3UAUlCx4hXCYwEu_elDiLhv9OfuZlfe8_BsUVja8",
-    },
-
-    {
-      id: "anvita-shukla",
-      name: "Anvita Shukla",
-      year: "2nd year",
-      role: "Design & Creative Lead",
-      email: "anvitashukla2006@gmail.com",
-      github: "https://github.com/ANVITA1126",
-      linkedin: "https://www.linkedin.com/in/anvita-shukla-96a396308",
-      discord: "https://discordapp.com/users/1374585138029006909",
-      avatar:
-        "https://media.licdn.com/dms/image/v2/D5603AQH4IrOB7ntM5w/profile-displayphoto-shrink_200_200/B56ZU4BBH2HEAY-/0/1740401546952?e=1756339200&v=beta&t=szltshJcKNTsBMdpJlTMT4kX2c3tzjr6F6rJ7Rp9Xh0",
-    },
-
-    {
-      id: "avinash-shukla",
-      name: "Avinash Kumar Shukla",
-      year: "2nd year",
-      role: "Operations Co-Lead",
-      email: "avinashshukla.dev@gmail.com",
-      github: "https://github.com/avinash-394",
-      linkedin: "https://www.linkedin.com/in/avinashshukla394/",
-      instagram: "https://instagram.com/avinash.shukla04",
-      discord: "https://discordapp.com/users/509685531291025419",
-      avatar:
-        "https://media.licdn.com/dms/image/v2/D5603AQG1nzHhYYAsVg/profile-displayphoto-shrink_200_200/B56ZUn3SSRHsAY-/0/1740130560580?e=1756339200&v=beta&t=wJEYH-H53UdZsDEWJEP0n94FXt02_BGdy53UDvLreDw",
-    },
-
-    {
-      id: "ashutosh-mishra",
-      name: "Ashutosh Mishra",
-      year: "2nd year",
-      email: "talktoashutoshmishra@gmail.com",
-      role: "Operations Co-Lead",
-      github: "https://github.com/TheAshutoshMishra",
-      linkedin: "https://www.linkedin.com/in/theashutoshmishra/",
-      instagram: "https://instagram.com/pt__ashutosh_mishra",
-      discord: "https://discordapp.com/users/1396699101399355523",
-      avatar:
-        "https://media.licdn.com/dms/image/v2/D4D03AQFrCj8GZX97rg/profile-displayphoto-shrink_200_200/B4DZcSfhdnGcAc-/0/1748361948934?e=1756339200&v=beta&t=yQ2LrB0q7bMBBCE4wTKNSI0MLLTlFhwOY6WX7QRACM8",
-    },
-
-    {
-      id: "anand-vashishtha",
-      name: "Anand Vashishtha",
-      year: "2nd year",
-      email: "anandcollege07@gmail.com",
-      github: "https://github.com/Anand-0037",
-      instagram: "https://instagram.com/anand_vash_03",
-      discord: "https://discordapp.com/users/1256244561517482077",
-      linkedin: "https://www.linkedin.com/in/anand-vashishtha-aba64b255",
-      avatar:
-        "https://media.licdn.com/dms/image/v2/D4D03AQELZjyaJ3LGiQ/profile-displayphoto-shrink_200_200/B4DZPImxA4HUAY-/0/1734237426910?e=1756339200&v=beta&t=f6WSU1Cd6P6oupgSP0dx_eVCwPU1XlvN9gCRvY0XTfA",
-    },
-
-    {
-      id: "mohd-abbas",
-      name: "Mohd. Abbas",
-      year: "2nd year",
-      email: "mr.mohdabbaszaidi@gmail.com",
-      github: "https://github.com/homiethissid3",
-      linkedin: "https://www.linkedin.com/in/mohd-abbas-84786920b",
-      instagram: "https://instagram.com/click_by_abbas",
-      discord: "https://discordapp.com/users/1364631551039766528",
-      avatar:
-        "https://media.licdn.com/dms/image/v2/D4D03AQGwj_sp7C8BVA/profile-displayphoto-shrink_200_200/B4DZahFcwkH0AY-/0/1746459284085?e=1756339200&v=beta&t=v9ioLYMoZBUOJwFTY3sr1DQ4D7l4pnmgmwWaTauDq4c",
-    },
-
-  ];
+  
+  const teamMembers: TeamMember[] = teamMembersk
 
   /**
    * Generates social media links for a team member
