@@ -28,7 +28,7 @@ const Footer = () => {
     { icon: Github, href: "https://github.com/ZenYukti", label: "GitHub" },
     { icon: Twitter, href: "https://twitter.com/ZenYukti", label: "Twitter" },
     { icon: Linkedin, href: "https://linkedin.com/company/zenyukti", label: "LinkedIn" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Instagram, href: "https://www.instagram.com/zenyukti/", label: "Instagram" },
     { icon: MessageCircle, href: "https://discord.gg/HuBa9r33kW", label: "Discord" },
   ];
 
