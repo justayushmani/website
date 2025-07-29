@@ -80,7 +80,7 @@ const Community = () => {
                 </Button>
               </a>
               <a
-                href="https://wagtsapp.com/zenyukti"
+                href="https://chat.whatsapp.com/HTwSFGYUNIb6m75IAzCxfk?mode=ac_t"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"
