@@ -5,6 +5,7 @@ Welcome to the source code repository for Zenyukti in testing version
 **🚀 Live Site: <a href= "https://zenyukti.github.io/website" target="_blank" rel="noopener noreferrer">
    https://zenyukti.github.io/website
 </a>**
+<img src="/src/media/zenyukti-landingpage.png" />
 
 ---
 
