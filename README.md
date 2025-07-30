@@ -64,12 +64,12 @@ Zenyukti Website is a modern, responsive web application built with cutting-edge
 
 - 📱 **Fully Responsive** - Seamless experience across all devices and screen sizes
 - ⚡ **Lightning Fast** - Optimized performance with <3s load times
-- ♿ **Accessibility First** - WCAG 2.1 AA compliant
 - 🔍 **SEO Optimized** - Built-in SEO best practices
 - 🎨 **Modern Design** - Clean, intuitive user interface
-- 🌙 **Dark Mode Support** - Toggle between light and dark themes
+- 🌙 **Dark Mode Support** - Toggle between light and dark themes (Coming Soon)
 - 🔧 **Developer Friendly** - Well-documented codebase with modern tooling
-- 🚀 **CI/CD Pipeline** - Automated testing and deployment
+- 🚀 **CI/CD Pipeline** - Automated testing and deployment (Coming Soon)
+- 🔍 **Deatiled Info** - Visit Wiki pages [Home Page - wiki | ZenYukti](https://github.com/ZenYukti/website/wiki)
 
 ---
 
