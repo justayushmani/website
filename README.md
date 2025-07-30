@@ -181,33 +181,40 @@ npm run preview
 ---
 
 ## Project Structure
-
 ```
 website/
-├── 📁 .github/              # GitHub workflows and templates
-│   ├── workflows/           # CI/CD pipelines
-│   └── ISSUE_TEMPLATE/      # Issue templates
-├── 📁 public/               # Static assets
-│   ├── favicon.ico
-│   └── robots.txt
-├── 📁 src/                  # Source code
-│   ├── 📁 assets/          # Images, fonts, icons
-│   ├── 📁 components/      # Reusable components
-│   ├── 📁 pages/           # Page components
-│   ├── 📁 styles/          # CSS/SCSS files
-│   ├── 📁 utils/           # Utility functions
-│   ├── 📁 data/            # Static data files
-│   └── main.js             # Application entry point
-├── 📁 docs/                # Documentation
-├── 📁 tests/               # Test files
-├── 📄 package.json         # Project configuration
-├── 📄 vite.config.js       # Vite configuration
-├── 📄 .gitignore          # Git ignore rules
-├── 📄 .eslintrc.js        # ESLint configuration
-├── 📄 .prettierrc         # Prettier configuration
-└── 📄 README.md           # This file
+├── 📁 .github/                    # GitHub configuration
+│   └── 📁 ISSUE_TEMPLATE/         # Issue and PR templates
+│       ├── 📄 bug_report.md       # Bug report template
+│       └── 📄 feature_request.md  # Feature request template
+├── 📁 dist/                       # Production build output (generated)
+│   ├── 📁 assets/                 # Compiled assets (CSS, JS, images)
+│   └── 📄 index.html              # Main HTML file
+├── 📁 node_modules/               # Dependencies (auto-generated)
+├── 📁 src/                        # Source code
+│   ├── 📁 assets/                 # Static assets (images, fonts, icons)
+│   ├── 📁 components/             # Reusable React components
+│   ├── 📁 hooks/                  # Custom React hooks
+│   ├── 📁 lib/                    # Utility libraries and helpers
+│   ├── 📁 pages/                  # Page components/routes
+│   ├── 📄 App.css                 # Main application styles
+│   ├── 📄 App.tsx                 # Root React component
+│   ├── 📄 index.css               # Global styles
+│   └── 📄 main.tsx                # Application entry point
+├── 📄 .gitignore                  # Git ignore patterns
+├── 📄 components.json             # shadcn/ui component configuration
+├── 📄 eslint.config.js            # ESLint configuration
+├── 📄 index.html                  # HTML template
+├── 📄 package-lock.json           # Locked dependency versions
+├── 📄 package.json                # Project configuration & dependencies
+├── 📄 postcss.config.js           # PostCSS configuration
+├── 📄 README.md                   # Project documentation (this file)
+├── 📄 tailwind.config.ts          # Tailwind CSS configuration
+├── 📄 tsconfig.app.json           # TypeScript config for app
+├── 📄 tsconfig.json               # Main TypeScript configuration
+├── 📄 tsconfig.node.json          # TypeScript config for Node.js
+└── 📄 vite.config.ts              # Vite build tool configuration
 ```
-
 ---
 
 ## Available Scripts
