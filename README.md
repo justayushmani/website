@@ -4,6 +4,8 @@
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/ZenYukti/website)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
+<img src="/src/media/zenyukti-landingpage.png" />
+
 > **Status:** Testing Version 🧪
 
 Welcome to the official source code repository for the Zenyukti website. This project represents our commitment to delivering a modern, responsive, and user-friendly web experience.
