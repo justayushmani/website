@@ -390,7 +390,7 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information
 **Zenyukti Team**
 
 [![Website](https://img.shields.io/badge/Website-zenyutki.github.io-blue?style=flat-square&logo=github)](https://zenyutki.github.io/website)
-[![Email](https://img.shields.io/badge/Email-contact@zenyukti.com-red?style=flat-square&logo=gmail)](mailto:contact@zenyukti.com)
+[![Email](https://img.shields.io/badge/Email-teamzenyutki@gmail.com-red?style=flat-square&logo=gmail)](mailto:teamzenyutki@gmail.com)
 [![Twitter](https://img.shields.io/badge/Twitter-@zenyukti-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/zenyukti)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Zenyukti-0077B5?style=flat-square&logo=linkedin)](https://linkedin.com/company/zenyukti)
 
