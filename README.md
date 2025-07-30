@@ -71,16 +71,6 @@ Zenyukti Website is a modern, responsive web application built with cutting-edge
 - 🔧 **Developer Friendly** - Well-documented codebase with modern tooling
 - 🚀 **CI/CD Pipeline** - Automated testing and deployment
 
-### 📈 Project Stats
-
-| Metric | Value |
-|--------|--------|
-| **Performance Score** | 95+ |
-| **Accessibility Score** | 100 |
-| **SEO Score** | 95+ |
-| **Bundle Size** | <100KB |
-| **Load Time** | <3s |
-
 ---
 
 ## Built With
