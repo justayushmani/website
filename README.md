@@ -18,7 +18,6 @@
 
 **[🌟 Live Demo](https://zenyutki.github.io/website) • [📚 Documentation](https://github.com/ZenYukti/website/wiki) • [🐛 Report Bug](https://github.com/ZenYukti/website/issues) • [✨ Request Feature](https://github.com/ZenYukti/website/issues)**
 
-<img src="/src/media/zenyukti-landingpage.png" />
 </div>
 
 ---
@@ -54,7 +53,7 @@
 ## About The Project
 
 <div align="center">
-  <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Zenyukti+Website+Screenshot" alt="Zenyukti Website Screenshot" width="800">
+  <img src="/src/media/zenyukti-landingpage.png" alt="Zenyukti Website Screenshot" width="800">
 </div>
 
 <br>
