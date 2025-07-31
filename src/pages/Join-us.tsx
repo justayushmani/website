@@ -19,7 +19,7 @@ const Domains = () => {
     },
     {
       title: "Active Contributors", 
-      description: "Collaborate on real projects and build your portfolio",
+      description: "Collaborate on real world projects and build your portfolio",
       icon: SiGithub,
       action: "Start Contributing",
       links: [

@@ -16,7 +16,7 @@
 
 ---
 
-**[🌟 Live Demo](https://zenyutki.github.io/website) • [📚 Documentation](https://github.com/ZenYukti/website/wiki) • [🐛 Report Bug](https://github.com/ZenYukti/website/issues) • [✨ Request Feature](https://github.com/ZenYukti/website/issues)**
+**[🌟 Live Demo](https://zenyukti.github.io/website/) • [📚 Documentation](https://github.com/ZenYukti/website/wiki) • [🐛 Report Bug](https://github.com/ZenYukti/website/issues) • [✨ Request Feature](https://github.com/ZenYukti/website/issues)**
 
 </div>
 

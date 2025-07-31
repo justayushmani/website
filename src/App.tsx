@@ -2,12 +2,13 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { HashRouter } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Domains from "./pages/Domains";
+import Domains from "./pages/Join-us";
 import Community from "./pages/Community";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
@@ -21,11 +22,12 @@ const App = () => (
       <Toaster />
       <Sonner />
       <HashRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/domains" element={<Domains />} />
+          <Route path="/join-us" element={<Domains />} />
           <Route path="/NotFound" element={<NotFound />} />
           <Route path="/community" element={<Community />} />
           <Route path="/contact" element={<Contact />} />

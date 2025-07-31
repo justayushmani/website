@@ -6,7 +6,7 @@ const Footer = () => {
   const footerLinks = {
     company: [
       { name: "About", href: "/about" },
-      { name: "Domains", href: "/domains" },
+      { name: "Join-us", href: "/join-us" },
       { name: "Projects", href: "/projects" },
       { name: "Team", href: "/team" },
     ],
@@ -41,16 +41,19 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-11 h-11 rounded-full overflow-hidden">
-              <img
-                src="https://media.licdn.com/dms/image/v2/D4D0BAQHGv2tcJ0RJ3w/company-logo_200_200/B4DZe1rfTUH4AM-/0/1751099766431/zenyukti_logo?e=1756339200&v=beta&t=c7qvMZeqv1azXKXbEdylE8y6j1yO6zdpX71hQiu8hco"
-                alt="zenyukti_logo" className="w-full h-full object-cover"/>
+                <img
+                  src="https://media.licdn.com/dms/image/v2/D4D0BAQHGv2tcJ0RJ3w/company-logo_200_200/B4DZe1rfTUH4AM-/0/1751099766431/zenyukti_logo?e=1756339200&v=beta&t=c7qvMZeqv1azXKXbEdylE8y6j1yO6zdpX71hQiu8hco"
+                  alt="zenyukti_logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <span className="font-display font-bold text-3xl text-foreground">
                 ZenYukti
               </span>
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Student-led tech community enabling members to learn, build, and share.
+              Student-led tech community enabling members to learn, build, and
+              share.
             </p>
             <div className="flex items-center space-x-4">
               {socialLinks.map((social, index) => {
@@ -73,7 +76,9 @@ const Footer = () => {
 
           {/* Company Links */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Quick Navigation</h3>
+            <h3 className="font-semibold text-foreground mb-4">
+              Quick Navigation
+            </h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
@@ -97,8 +102,12 @@ const Footer = () => {
                   <a
                     href={link.href}
                     className="text-muted-foreground hover:text-primary transition-colors duration-200"
-                    target={link.href.startsWith('http') ? '_blank' : '_self'}
-                    rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    target={link.href.startsWith("http") ? "_blank" : "_self"}
+                    rel={
+                      link.href.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                   >
                     {link.name}
                   </a>
@@ -132,7 +141,8 @@ const Footer = () => {
               Stay Updated
             </h3>
             <p className="text-muted-foreground mb-6">
-              Get the latest updates on projects, events, and community activities.
+              Get the latest updates on projects, events, and community
+              activities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
@@ -149,24 +159,27 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-border pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-muted-foreground text-sm">
-              © 2024 ZenYukti. All rights reserved. Built with ❤️ by the community.
-            </p>
-            <div className="flex items-center space-x-6 text-sm">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                Code of Conduct
-              </a>
-            </div>
-          </div>
-        </div>
+        <div className="border-t border-border mt-10 pt-6 pb-4">
+  <div className="max-w-7xl mx-auto px-4 flex flex-col items-center text-center gap-4 text-sm">
+    <div className="text-muted-foreground">
+      <p className="mb-1">Built with ❤️ by the community.</p>
+      <p>
+        © 2025 <span className="font-semibold text-foreground">ZenYukti</span>. All rights reserved.
+      </p>
+    </div>
+    <div className="flex flex-wrap justify-center items-center gap-4">
+      <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+        Privacy Policy
+      </a>
+      <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+        Terms of Service
+      </a>
+      <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+        Code of Conduct
+      </a>
+    </div>
+  </div>
+</div>
       </div>
     </footer>
   );
