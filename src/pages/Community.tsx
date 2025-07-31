@@ -10,7 +10,7 @@ const Community = () => {
     {
       name: "LinkedIn",
       icon: Linkedin,
-      //followers: "2.5K+",
+      followers: "2.5K+",
       description: "Professional updates and industry insights",
       color: "text-blue-400",
       url: "https://www.linkedin.com/company/zenyukti/"
@@ -18,7 +18,7 @@ const Community = () => {
     {
       name: "Instagram", 
       icon: Instagram,
-      //followers: "1.8K+",
+      followers: "1.8K+",
       description: "Behind the scenes and community highlights",
       color: "text-pink-400",
       url: "https://www.instagram.com/zenyukti/",
@@ -26,7 +26,7 @@ const Community = () => {
     {
       name: "Twitter",
       icon: Twitter,
-      //followers: "1.2K+", 
+      followers: "1.2K+", 
       description: "Quick updates and tech discussions",
       color: "text-blue-400",
       url: "https://x.com/zenyukti",
@@ -68,28 +68,15 @@ const Community = () => {
               Connect with like-minded individuals and grow together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://discord.com/invite/HuBa9r33kW"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto"
-              >
-                <Button size="lg" className="bg-gradient-primary hover:opacity-90 text-white w-full">
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Join Discord
-                </Button>
-              </a>
-              <a
-                href="https://chat.whatsapp.com/HTwSFGYUNIb6m75IAzCxfk?mode=ac_t"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto"
-              >
-                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white w-full">
-                  <Users className="w-5 h-5 mr-2" />
-                  WhatsApp Group
-                </Button>
-              </a>
+            <Button asChild size="lg" className="bg-gradient-primary hover:opacity-90 text-white">
+               <a href="https://discord.gg/HuBa9r33kW" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5 mr-2" /> Join Discord
+               </a>
+              </Button>
+              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+                <Users className="w-5 h-5 mr-2" />
+                WhatsApp Group
+              </Button>
             </div>
           </div>
         </section>
@@ -143,7 +130,7 @@ const Community = () => {
                     </CardHeader>
                     <CardContent className="text-center">
                       <div className="text-3xl font-bold text-primary mb-4">
-                        {platform.followers}
+                      {/*{platform.followers} */}
                       </div>
                       <a
                         href={platform.url}
