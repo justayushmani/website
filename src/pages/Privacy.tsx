@@ -46,7 +46,7 @@ const Privacy = () => {
     }
   ];
 
-  const lastUpdated = "January 15, 2025";
+  const lastUpdated = "August 2, 2025";
 
   return (
     <div className="min-h-screen bg-background">
