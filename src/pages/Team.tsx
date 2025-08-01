@@ -202,77 +202,201 @@ const Team = () => {
           <div className="container mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-                Our Founder
+                Our Founders
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Meet the visionary who started ZenYukti with a dream to make
+                Meet the visionaries who started ZenYukti with a dream to make
                 tech education accessible to all.
               </p>
             </div>
 
-            {/* Founder card */}
-            {teamMembers
-              .filter((member) => member.isFounder)
-              .map((founder) => (
-                <Card
-                  key={founder.id}
-                  className="max-w-2xl mx-auto bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
-                >
-                  <CardContent className="p-8 text-center">
-                    {/* Avatar */}
-                    <div className="w-32 h-32 mx-auto mb-6 relative">
-                      {!imageErrors[founder.id] && founder.avatar ? (
-                        <img
-                          src={founder.avatar}
-                          alt={`${founder.name} - Founder`}
-                          className="w-full h-full rounded-full object-cover border-4 border-gradient-primary"
-                          onError={() => handleImageError(founder.id)}
-                        />
-                      ) : (
-                        <div className="w-full h-full rounded-full bg-gradient-primary flex items-center justify-center text-white text-2xl font-bold border-4 border-primary/20">
-                          {getInitials(founder.name)}
+            {/* Founders grid - responsive layout */}
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Co-founder Left - Anvita Shukla */}
+              <div className="order-2 md:order-1">
+                {(() => {
+                  const anvita = teamMembers.find(member => member.id === "anvita-shukla");
+                  if (!anvita) return null;
+                  return (
+                    <Card className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
+                      <CardContent className="p-8 text-center">
+                        {/* Avatar */}
+                        <div className="w-32 h-32 mx-auto mb-6 relative">
+                          {!imageErrors[anvita.id] && anvita.avatar ? (
+                            <img
+                              src={anvita.avatar}
+                              alt={`${anvita.name} - Co-founder`}
+                              className="w-full h-full rounded-full object-cover border-4 border-gradient-primary"
+                              onError={() => handleImageError(anvita.id)}
+                            />
+                          ) : (
+                            <div className="w-full h-full rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center text-white text-2xl font-bold border-4 border-primary/20">
+                              {getInitials(anvita.name)}
+                            </div>
+                          )}
+                          <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-neon-purple rounded-full flex items-center justify-center">
+                            <Heart className="w-4 h-4 text-white" />
+                          </div>
                         </div>
-                      )}
-                      <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-neon-green rounded-full flex items-center justify-center">
-                        <Heart className="w-4 h-4 text-white" />
-                      </div>
-                    </div>
 
-                    {/* Founder info */}
-                    <h3 className="text-2xl font-bold text-foreground mb-2">
-                      {founder.name}
-                    </h3>
-                    <h6 className="text-2x1 text-foreground mb-2.5">
-                      {founder.subname}
-                    </h6>
-                    <p className="text-lg text-primary mb-2">{founder.role}</p>
-                    <p className="text-muted-foreground mb-4">{founder.year}</p>
-                    {founder.bio && (
-                      <p className="text-muted-foreground mb-6 italic">
-                        {founder.bio}
-                      </p>
-                    )}
+                        {/* Co-founder info */}
+                        <h3 className="text-2xl font-bold text-foreground mb-2">
+                          {anvita.name}
+                        </h3>
+                        <p className="text-lg text-primary mb-2">Co-founder & Creative Lead</p>
+                        <p className="text-muted-foreground mb-4">{anvita.year}</p>
+                        {anvita.bio && (
+                          <p className="text-muted-foreground mb-6 italic">
+                            {anvita.bio}
+                          </p>
+                        )}
 
-                    {/* Social links */}
-                    <div className="flex justify-center space-x-4">
-                      {getSocialLinks(founder).map((social, idx) => {
-                        const IconComponent = social.icon;
-                        return (
-                          <a
-                            key={idx}
-                            href={social.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={`inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 p-2 hover:bg-secondary/50 ${social.color} transition-all duration-200 hover:scale-110`}
-                          >
-                            <IconComponent className="w-5 h-5" />
-                          </a>
-                        );
-                      })}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+                        {/* Social links */}
+                        <div className="flex justify-center space-x-4">
+                          {getSocialLinks(anvita).map((social, idx) => {
+                            const IconComponent = social.icon;
+                            return (
+                              <a
+                                key={idx}
+                                href={social.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 p-2 hover:bg-secondary/50 ${social.color} transition-all duration-200 hover:scale-110`}
+                              >
+                                <IconComponent className="w-5 h-5" />
+                              </a>
+                            );
+                          })}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  );
+                })()}
+              </div>
+
+              {/* Main Founder - Center */}
+              <div className="order-1 md:order-2">
+                {teamMembers
+                  .filter((member) => member.isFounder)
+                  .map((founder) => (
+                    <Card
+                      key={founder.id}
+                      className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
+                    >
+                      <CardContent className="p-8 text-center">
+                        {/* Avatar */}
+                        <div className="w-32 h-32 mx-auto mb-6 relative">
+                          {!imageErrors[founder.id] && founder.avatar ? (
+                            <img
+                              src={founder.avatar}
+                              alt={`${founder.name} - Founder`}
+                              className="w-full h-full rounded-full object-cover border-4 border-gradient-primary"
+                              onError={() => handleImageError(founder.id)}
+                            />
+                          ) : (
+                            <div className="w-full h-full rounded-full bg-gradient-primary flex items-center justify-center text-white text-2xl font-bold border-4 border-primary/20">
+                              {getInitials(founder.name)}
+                            </div>
+                          )}
+                          <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-neon-green rounded-full flex items-center justify-center">
+                            <Heart className="w-4 h-4 text-white" />
+                          </div>
+                        </div>
+
+                        {/* Founder info */}
+                        <h3 className="text-2xl font-bold text-foreground mb-2">
+                          {founder.name}
+                        </h3>
+                        <h6 className="text-2x1 text-foreground mb-2.5">
+                          {founder.subname}
+                        </h6>
+                        <p className="text-lg text-primary mb-2">{founder.role}</p>
+                        <p className="text-muted-foreground mb-4">{founder.year}</p>
+                        {founder.bio && (
+                          <p className="text-muted-foreground mb-6 italic">
+                            {founder.bio}
+                          </p>
+                        )}
+
+                        {/* Social links */}
+                        <div className="flex justify-center space-x-4">
+                          {getSocialLinks(founder).map((social, idx) => {
+                            const IconComponent = social.icon;
+                            return (
+                              <a
+                                key={idx}
+                                href={social.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 p-2 hover:bg-secondary/50 ${social.color} transition-all duration-200 hover:scale-110`}
+                              >
+                                <IconComponent className="w-5 h-5" />
+                              </a>
+                            );
+                          })}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+              </div>
+
+              {/* Co-founder Right - Avinash Shukla */}
+              <div className="order-3 md:order-3">
+                {(() => {
+                  const avinash = teamMembers.find(member => member.id === "avinash-shukla");
+                  if (!avinash) return null;
+                  return (
+                    <Card className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
+                      <CardContent className="p-8 text-center">
+                        {/* Avatar */}
+                        <div className="w-32 h-32 mx-auto mb-6 relative">
+                          {!imageErrors[avinash.id] && avinash.avatar ? (
+                            <img
+                              src={avinash.avatar}
+                              alt={`${avinash.name} - Co-founder`}
+                              className="w-full h-full rounded-full object-cover border-4 border-gradient-primary"
+                              onError={() => handleImageError(avinash.id)}
+                            />
+                          ) : (
+                            <div className="w-full h-full rounded-full bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center text-white text-2xl font-bold border-4 border-primary/20">
+                              {getInitials(avinash.name)}
+                            </div>
+                          )}
+                          <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-neon-blue rounded-full flex items-center justify-center">
+                            <Heart className="w-4 h-4 text-white" />
+                          </div>
+                        </div>
+
+                        {/* Co-founder info */}
+                        <h3 className="text-2xl font-bold text-foreground mb-2">
+                          {avinash.name}
+                        </h3>
+                        <p className="text-lg text-primary mb-2">Co-founder & Operations Lead</p>
+                        <p className="text-muted-foreground mb-4">{avinash.year}</p>
+
+                        {/* Social links */}
+                        <div className="flex justify-center space-x-4">
+                          {getSocialLinks(avinash).map((social, idx) => {
+                            const IconComponent = social.icon;
+                            return (
+                              <a
+                                key={idx}
+                                href={social.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 p-2 hover:bg-secondary/50 ${social.color} transition-all duration-200 hover:scale-110`}
+                              >
+                                <IconComponent className="w-5 h-5" />
+                              </a>
+                            );
+                          })}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  );
+                })()}
+              </div>
+            </div>
           </div>
         </section>
 
@@ -292,7 +416,7 @@ const Team = () => {
             {/* Team grid - responsive layout */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {teamMembers
-                .filter((member) => !member.isFounder)
+                .filter((member) => !member.isFounder && member.id !== "anvita-shukla" && member.id !== "avinash-shukla")
                 .map((member, index) => (
                   <Card
                     key={member.id}
