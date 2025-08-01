@@ -134,7 +134,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Section */}
+        {/* Newsletter Section {---------------------/*Do Not Delete This Section, it is for future use----------------------}
+
         <div className="bg-gradient-secondary/10 rounded-2xl p-8 border border-accent/20 mb-12">
           <div className="max-w-2xl mx-auto text-center">
             <h3 className="font-display font-bold text-2xl text-foreground mb-4">
@@ -156,8 +157,8 @@ const Footer = () => {
               </Button>
             </div>
           </div>
-        </div>
-
+        </div>*/} 
+        
         {/* Bottom Bar */}
         <div className="border-t border-border mt-10 pt-6 pb-4">
   <div className="max-w-7xl mx-auto px-4 flex flex-col items-center text-center gap-4 text-sm">
