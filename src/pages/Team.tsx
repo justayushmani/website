@@ -371,8 +371,13 @@ const Team = () => {
                         <h3 className="text-2xl font-bold text-foreground mb-2">
                           {avinash.name}
                         </h3>
-                        <p className="text-lg text-primary mb-2">Co-founder & Operations Lead</p>
+                        <p className="text-lg text-primary mb-2">Co-founder & Ops Co-Lead</p>
                         <p className="text-muted-foreground mb-4">{avinash.year}</p>
+                        {avinash.bio && (
+                          <p className="text-muted-foreground mb-6 italic">
+                            {avinash.bio}
+                          </p>
+                        )}
 
                         {/* Social links */}
                         <div className="flex justify-center space-x-4">
