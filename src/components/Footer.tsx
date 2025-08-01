@@ -169,9 +169,9 @@ const Footer = () => {
       </p>
     </div>
     <div className="flex flex-wrap justify-center items-center gap-4">
-      <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+      <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
         Privacy Policy
-      </a>
+      </Link>
       <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
         Terms of Service
       </a>
