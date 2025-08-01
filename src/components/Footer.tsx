@@ -172,12 +172,12 @@ const Footer = () => {
       <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
         Privacy Policy
       </Link>
-      <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+      <Link to="/termsofservice" className="text-muted-foreground hover:text-primary transition-colors">
         Terms of Service
-      </a>
-      <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+      </Link>
+      <Link to="/codeofconduct" className="text-muted-foreground hover:text-primary transition-colors">
         Code of Conduct
-      </a>
+      </Link>
     </div>
   </div>
 </div>

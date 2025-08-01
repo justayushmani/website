@@ -14,6 +14,8 @@ import Contact from "./pages/Contact";
 import Team from "./pages/Team";
 import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
+import CodeOfConduct from "./pages/CodeOfConduct";
+import TermsOfService from "./pages/TermsOfService";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +36,12 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<Team />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/codeofconduct" element={<CodeOfConduct />} />
+          <Route path="/termsofservice" element={<TermsOfService />} />
+
+          {/* Add any other custom routes here */}
+          
+          {/* Catch-all route for 404 Not Found */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
