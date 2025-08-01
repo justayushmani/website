@@ -195,7 +195,7 @@ const Contact = () => {
           </div>
         </section>
 
-        {/* Partnership Section */}
+        {/* Partnership Section  ----------------------This section is added to the Contact page as per the request---------------------- *
         <section className="py-20 px-4 bg-dark-surface/50">
           <div className="container mx-auto">
             <div className="text-center mb-12">
@@ -237,7 +237,7 @@ const Contact = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* CTA Section */}
         <section className="py-20 px-4">

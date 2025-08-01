@@ -152,19 +152,19 @@ const Community = () => {
           <div className="container mx-auto">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="text-3xl font-bold text-primary mb-2">1800+</h3>
+                <h3 className="text-3xl font-bold text-primary mb-2">...</h3>
                 <p className="text-muted-foreground">Total Members</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="text-3xl font-bold text-primary mb-2">35</h3>
+                <h3 className="text-3xl font-bold text-primary mb-2">...</h3>
                 <p className="text-muted-foreground">Active Contributors</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="text-3xl font-bold text-primary mb-2">50+</h3>
+                <h3 className="text-3xl font-bold text-primary mb-2">...</h3>
                 <p className="text-muted-foreground">Projects Completed</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="text-3xl font-bold text-primary mb-2">12</h3>
+                <h3 className="text-3xl font-bold text-primary mb-2">...</h3>
                 <p className="text-muted-foreground">Mentors</p>
               </div>
             </div>
