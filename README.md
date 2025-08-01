@@ -4,19 +4,19 @@
 
 **Modern, Fast, and Accessible Web Experience**
 
-[![Live Website](https://img.shields.io/badge/🌐%20Live%20Website-Visit%20Now-blue?style=for-the-badge)](https://zenyutki.github.io/website)
-[![GitHub Stars](https://img.shields.io/github/stars/ZenYukti/website?style=for-the-badge&logo=github&color=yellow)](https://github.com/ZenYukti/website/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/ZenYukti/website?style=for-the-badge&logo=github&color=green)](https://github.com/ZenYukti/website/network/members)
-[![GitHub Issues](https://img.shields.io/github/issues/ZenYukti/website?style=for-the-badge&logo=github&color=red)](https://github.com/ZenYukti/website/issues)
+[![Live Website](https://img.shields.io/badge/🌐%20Live%20Website-Visit%20Now-blue?style=for-the-badge)](https://zenyukti.github.io/)
+[![GitHub Stars](https://img.shields.io/github/stars/ZenYukti/zenyukti.github.io?style=for-the-badge&logo=github&color=yellow)](https://github.com/ZenYukti/zenyukti.github.io/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/ZenYukti/zenyukti.github.io?style=for-the-badge&logo=github&color=green)](https://github.com/ZenYukti/zenyukti.github.io/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/ZenYukti/zenyukti.github.io?style=for-the-badge&logo=github&color=red)](https://github.com/ZenYukti/zenyukti.github.io/issues)
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/ZenYukti/website/deploy.yml?style=flat-square&logo=github-actions)](https://github.com/ZenYukti/website/actions)
-[![License](https://img.shields.io/github/license/ZenYukti/website?style=flat-square)](LICENSE)
-[![Code Size](https://img.shields.io/github/languages/code-size/ZenYukti/website?style=flat-square)](https://github.com/ZenYukti/website)
-[![Last Commit](https://img.shields.io/github/last-commit/ZenYukti/website?style=flat-square)](https://github.com/ZenYukti/website/commits/main)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/ZenYukti/zenyukti.github.io/deploy.yml?style=flat-square&logo=github-actions)](https://github.com/ZenYukti/zenyukti.github.io/actions)
+[![License](https://img.shields.io/github/license/ZenYukti/zenyukti.github.io?style=flat-square)](LICENSE)
+[![Code Size](https://img.shields.io/github/languages/code-size/ZenYukti/zenyukti.github.io?style=flat-square)](https://github.com/ZenYukti/zenyukti.github.io)
+[![Last Commit](https://img.shields.io/github/last-commit/ZenYukti/zenyukti.github.io?style=flat-square)](https://github.com/ZenYukti/zenyukti.github.io/commits/main)
 
 ---
 
-**[🌟 Live Demo](https://zenyukti.github.io/website/) • [📚 Documentation](https://github.com/ZenYukti/website/wiki) • [🐛 Report Bug](https://github.com/ZenYukti/website/issues) • [✨ Request Feature](https://github.com/ZenYukti/website/issues)**
+**[🌟 Live Demo](https://zenyukti.github.io/) • [📚 Documentation](https://github.com/ZenYukti/zenyukti.github.io/wiki) • [🐛 Report Bug](https://github.com/ZenYukti/zenyukti.github.io/issues) • [✨ Request Feature](https://github.com/ZenYukti/zenyukti.github.io/issues)**
 
 </div>
 
@@ -69,7 +69,7 @@ Zenyukti Website is a modern, responsive web application built with cutting-edge
 - 🌙 **Dark Mode Support** - Toggle between light and dark themes (Coming Soon)
 - 🔧 **Developer Friendly** - Well-documented codebase with modern tooling
 - 🚀 **CI/CD Pipeline** - Automated testing and deployment (Coming Soon)
-- 🔍 **Deatiled Info** - Visit Wiki pages [Home Page - wiki | ZenYukti](https://github.com/ZenYukti/website/wiki)
+- 🔍 **Detailed Info** - Visit Wiki pages [Home Page - wiki | ZenYukti](https://github.com/ZenYukti/zenyukti.github.io/wiki)
 
 ---
 
@@ -121,8 +121,8 @@ git --version   # Any recent version
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/ZenYukti/website.git
-   cd website
+   git clone https://github.com/ZenYukti/zenyukti.github.io.git
+   cd zenyukti.github.io
    ```
 
 2. **Install dependencies**
@@ -157,7 +157,7 @@ git --version   # Any recent version
 
 ### Basic Usage
 
-The website is designed to be intuitive and user-friendly. Simply navigate to the [live site](https://zenyutki.github.io/website) to explore all features.
+The website is designed to be intuitive and user-friendly. Simply navigate to the [live site](https://zenyukti.github.io/) to explore all features.
 
 ### Development Workflow
 
@@ -182,7 +182,7 @@ npm run preview
 
 ## Project Structure
 ```
-website/
+zenyukti.github.io/
 ├── 📁 .github/                    # GitHub configuration
 │   └── 📁 ISSUE_TEMPLATE/         # Issue and PR templates
 │       ├── 📄 bug_report.md       # Bug report template
@@ -235,7 +235,7 @@ website/
 
 ## Roadmap
 
-See the [open issues](https://github.com/ZenYukti/website/issues) for a full list of proposed features and known issues.
+See the [open issues](https://github.com/ZenYukti/zenyukti.github.io/issues) for a full list of proposed features and known issues.
 
 ### Upcoming Features
 
@@ -389,14 +389,14 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information
 
 **Zenyukti Team**
 
-[![Website](https://img.shields.io/badge/Website-zenyutki.github.io-blue?style=flat-square&logo=github)](https://zenyutki.github.io/website)
+[![Website](https://img.shields.io/badge/Website-zenyukti.github.io-blue?style=flat-square&logo=github)](https://zenyukti.github.io/)
 [![Email](https://img.shields.io/badge/Email-teamzenyutki@gmail.com-red?style=flat-square&logo=gmail)](mailto:teamzenyutki@gmail.com)
 [![Twitter](https://img.shields.io/badge/Twitter-@zenyukti-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/zenyukti)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Zenyukti-0077B5?style=flat-square&logo=linkedin)](https://linkedin.com/company/zenyukti)
 
 **Project Links**
 
-[🏠 Homepage](https://zenyutki.github.io/website) • [📊 Issues](https://github.com/ZenYukti/website/issues) • [🚀 Releases](https://github.com/ZenYukti/website/releases) • [📈 Insights](https://github.com/ZenYukti/website/pulse)
+[🏠 Homepage](https://zenyukti.github.io/) • [📊 Issues](https://github.com/ZenYukti/zenyukti.github.io/issues) • [🚀 Releases](https://github.com/ZenYukti/zenyukti.github.io/releases) • [📈 Insights](https://github.com/ZenYukti/zenyukti.github.io/pulse)
 
 </div>
 
@@ -408,7 +408,7 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information
 
 **Special Thanks To:**
 
-- 🙏 All [contributors](https://github.com/ZenYukti/website/contributors) who participated in this project
+- 🙏 All [contributors](https://github.com/ZenYukti/zenyukti.github.io/contributors) who participated in this project
 - 💡 The open-source community for inspiration and resources
 - 🛠️ [Vite](https://vitejs.dev/) team for the amazing build tool
 - 🎨 [GitHub](https://github.com/) for hosting and CI/CD capabilities
@@ -424,8 +424,8 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information
 
 ⭐ **Star this repository if you find it helpful!**
 
-[![GitHub Stars](https://img.shields.io/github/stars/ZenYukti/website?style=social)](https://github.com/ZenYukti/website/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/ZenYukti/website?style=social)](https://github.com/ZenYukti/website/network/members)
-[![GitHub Watchers](https://img.shields.io/github/watchers/ZenYukti/website?style=social)](https://github.com/ZenYukti/website/watchers)
+[![GitHub Stars](https://img.shields.io/github/stars/ZenYukti/zenyukti.github.io?style=social)](https://github.com/ZenYukti/zenyukti.github.io/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/ZenYukti/zenyukti.github.io?style=social)](https://github.com/ZenYukti/zenyukti.github.io/network/members)
+[![GitHub Watchers](https://img.shields.io/github/watchers/ZenYukti/zenyukti.github.io?style=social)](https://github.com/ZenYukti/zenyukti.github.io/watchers)
 
 </div>
