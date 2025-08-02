@@ -29,7 +29,7 @@ const Domains = () => {
     },
     {
       title: "Mentors",
-      description: "Share your expertise and empower future innovators through meaningful mentorship",
+      description: "Share your expertise and empower future innovators through meaningful mentorship.",
       icon: Mentors,
       action: "Apply as Mentor",
       links: [
