@@ -2,9 +2,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { 
-  Users, 
-  Code2, 
-  Palette, 
+  GraduationCap, 
+  HandHelping, 
+  	Users, 
   MessageCircle, 
   Github, 
   ArrowRight,
@@ -14,35 +14,35 @@ import {
 } from "lucide-react";
 
 const DomainsPreview = () => {
-  const domains = [
-    {
-      title: "Development",
-      icon: Code2,
-      description: "Full-stack development, mobile apps, and backend systems",
-      members: "45+",
-      projects: "12",
-      skills: ["React", "Node.js", "Python", "Flutter"],
-      color: "neon-green"
-    },
-    {
-      title: "Design",
-      icon: Palette,
-      description: "UI/UX design, graphics, branding, and visual storytelling",
-      members: "30+",
-      projects: "8",
-      skills: ["Figma", "Adobe CC", "Prototyping", "Branding"],
-      color: "neon-purple"
-    },
-    {
-      title: "Community",
-      icon: Users,
-      description: "Content creation, social media, and community engagement",
-      members: "25+",
-      projects: "15",
-      skills: ["Content", "Social Media", "Events", "Outreach"],
-      color: "neon-blue"
-    }
-  ];
+const domains = [
+  {
+    title: "Members",
+    icon: Users ,
+    description: "Experienced professionals guiding and empowering learners.",
+    members: "25+",
+    /*projects: "5",*/
+    skills: ["Learning Mindset", "Discussion", "Engagement", "Community Building"],
+    color: "neon-orange"
+  },
+  {
+    title: "Contributors",
+    icon: HandHelping,
+    description: "Collaborative teams building impactful tech and community solutions.",
+    members: "5+",
+    /*projects: "20",*/
+    skills: ["Open Source Contribution", "Problem Solving", "Issue Tracking", "esting & Debugging"],
+    color: "neon-purple"
+  },
+  {
+    title: "Mentors",
+    icon: 	GraduationCap,
+    description: "Creative and passionate individuals contributing across domains.",
+    members: "10+",
+   /* projects: "25",*/
+    skills: ["Guidance", "Code Review", "Career Mentoring", "Issue Tracking"],
+    color: "neon-blue"
+  }
+];
 
   const contributorFeatures = [
     {
@@ -104,13 +104,24 @@ const DomainsPreview = () => {
                       </div>
                       <div className="text-xs text-muted-foreground">Members</div>
                     </div>
-                    <div className="text-center">
+
+                   
+                   {
+                   /*} <div className="text-center">
                       <div className={`text-xl font-bold text-${domain.color}`}>
                         {domain.projects}
                       </div>
+                      </div>
+
+                      */
+                      }
+                     {/*
+                      
                       <div className="text-xs text-muted-foreground">Projects</div>
+                         */}
                     </div>
-                  </div>
+                 
+                  
 
                   {/* Skills */}
                   <div className="space-y-3">
@@ -128,30 +139,44 @@ const DomainsPreview = () => {
                     </div>
                   </div>
 
-                  {/* CTAs */}
-                  <div className="flex flex-col space-y-2 pt-4">
-                    <Button 
+
+                 {/* CTAs */}
+                <div className="flex flex-col space-y-2 pt-4">
+
+  
+                    {/*<Button 
                       variant="outline" 
                       size="sm"
                       className={`border-${domain.color} text-${domain.color} hover:bg-${domain.color} hover:text-white`}
                     >
+                     yaha pr link daalna h!!
                       <MessageCircle className="w-4 h-4 mr-2" />
                       Join WhatsApp
                     </Button>
-                    <Button 
+
+          
+                   
+                   <Button 
                       variant="ghost" 
                       size="sm"
                       className="text-muted-foreground hover:text-foreground"
                     >
                       <Github className="w-4 h-4 mr-2" />
                       View Projects
-                    </Button>
+                    </Button>*/}
+                 
+                 
+
                   </div>
                 </CardContent>
               </Card>
             );
           })}
-        </div>
+          </div>
+        
+
+       
+        
 
         {/* Active Contributors Section */}
         <div className="bg-gradient-secondary/10 rounded-3xl p-8 sm:p-12 border border-accent/20">
