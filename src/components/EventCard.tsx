@@ -15,6 +15,7 @@ interface EventCardProps {
   link: string;
   linkText: string;
   icon?: string;
+  showButton?: boolean;
 }
 
 const EventCard = ({
@@ -24,6 +25,7 @@ const EventCard = ({
   link,
   linkText,
   icon,
+  showButton = true,
 }: EventCardProps) => {
   const Icon = icon === "users" ? Users : Calendar;
 
@@ -46,6 +48,7 @@ const EventCard = ({
             timeZone: "Asia/Kolkata",
           })}
         </p>
+        {showButton && (
         <Button
           asChild
           className="bg-gradient-primary hover:opacity-90 text-white w-full"
@@ -53,7 +56,7 @@ const EventCard = ({
           <a href={link} target="_blank" rel="noopener noreferrer">
             {linkText}
           </a>
-        </Button>
+        </Button>)}
       </CardContent>
     </Card>
   );
