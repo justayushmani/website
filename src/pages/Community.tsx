@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToHash from "@/components/ScrollToHash";
 import {
   Card,
   CardContent,
@@ -11,13 +12,14 @@ import { Button } from "@/components/ui/button";
 import {
   Instagram,
   Linkedin,
-  Twitter,
+  X,
   Users,
-  Calendar,
-  MessageCircle,
-} from "lucide-react";
+  Whatsapp,
+  Discord,
+} from "@/components/icons";
 import { useEffect, useState } from "react";
 import EventCard from "@/components/EventCard";
+
 
 const Community = () => {
   const socialPlatforms = [
@@ -38,8 +40,8 @@ const Community = () => {
       url: "https://www.instagram.com/zenyukti/",
     },
     {
-      name: "Twitter",
-      icon: Twitter,
+      name: "X",
+      icon: X,
       followers: "1.2K+",
       description: "Quick updates and tech discussions",
       color: "text-blue-400",
@@ -52,7 +54,7 @@ const Community = () => {
   });
 
   useEffect(() => {
-    fetch("/website/events.json")
+    fetch("/events.json")
       .then((res) => res.json())
       .then((data) => {
         const now = new Date().getTime();
@@ -132,7 +134,7 @@ const Community = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <MessageCircle className="w-5 h-5 mr-2" /> Join Discord
+                  <Discord className="w-5 h-5 mr-2" /> Join Discord
                 </a>
               </Button>
               <Button
@@ -258,9 +260,9 @@ const Community = () => {
             </div>
           </div>
         </section>
-
+        <ScrollToHash />
         {/* Events Section */}
-        <section className="py-20 px-4">
+        <section id="events"className="py-20 px-4">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
               Upcoming Events

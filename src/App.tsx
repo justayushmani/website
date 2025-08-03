@@ -16,6 +16,7 @@ import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
 import CodeOfConduct from "./pages/CodeOfConduct";
 import TermsOfService from "./pages/TermsOfService";
+import CountdownGate from "./components/Countdown";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <HashRouter>
+        <CountdownGate>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
@@ -45,6 +47,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </CountdownGate>
       </HashRouter>
     </TooltipProvider>
   </QueryClientProvider>
