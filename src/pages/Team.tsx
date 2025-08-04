@@ -22,6 +22,7 @@ import {
   Code,
   Heart,
   Mail,
+  X,
 } from "@/components/icons";
 
 /**
@@ -113,6 +114,18 @@ const Team = () => {
         color: "text-pink-400 hover:text-pink-300",
       });
     }
+
+    // Twitter link
+    if (member.twitter) {
+      links.push({
+        platform: "Twitter",
+        url: member.twitter,
+        icon: X,
+        color: "text-gray-200 hover:text-gray-100"
+      });
+    }
+
+
     // Discord link
     if (member.discord) {
       links.push({
@@ -491,11 +504,10 @@ const Team = () => {
           <div className="container mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-                ZenMates • The Members
+                ZenMates • The Action Team
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                The emerging talents and coordinators supporting various aspects of 
-                ZenYukti's mission and community growth.
+                The hands-on crew that makes sure ideas don’t just stay ideas.
               </p>
             </div>
 
