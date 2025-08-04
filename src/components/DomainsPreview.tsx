@@ -19,7 +19,7 @@ const domains = [
     title: "Members",
     icon: Users ,
     description: "Experienced professionals guiding and empowering learners.",
-    members: "25+",
+    members: "550+",
     /*projects: "5",*/
     skills: ["Learning Mindset", "Discussion", "Engagement", "Community Building"],
     color: "neon-orange"
@@ -28,16 +28,16 @@ const domains = [
     title: "Contributors",
     icon: HandHelping,
     description: "Collaborative teams building impactful tech and community solutions.",
-    members: "5+",
+    members: "10+",
     /*projects: "20",*/
-    skills: ["Open Source Contribution", "Problem Solving", "Issue Tracking", "esting & Debugging"],
+    skills: ["Open Source Contribution", "Problem Solving", "Issue Tracking", "Testing & Debugging"],
     color: "neon-purple"
   },
   {
     title: "Mentors",
     icon: 	GraduationCap,
     description: "Creative and passionate individuals contributing across domains.",
-    members: "10+",
+    members: "...",
    /* projects: "25",*/
     skills: ["Guidance", "Code Review", "Career Mentoring", "Issue Tracking"],
     color: "neon-blue"
@@ -125,7 +125,7 @@ const domains = [
 
                   {/* Skills */}
                   <div className="space-y-3">
-                    <h4 className="font-semibold text-sm text-foreground">Popular Skills:</h4>
+                    <h4 className="font-semibold text-sm text-foreground">What they bring:</h4>
                     <div className="flex flex-wrap gap-2">
                       {domain.skills.map((skill, skillIndex) => (
                         <Badge 
@@ -173,10 +173,6 @@ const domains = [
             );
           })}
           </div>
-        
-
-       
-        
 
         {/* Active Contributors Section */}
         <div className="bg-gradient-secondary/10 rounded-3xl p-8 sm:p-12 border border-accent/20">
@@ -187,6 +183,10 @@ const domains = [
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Ready to take your involvement to the next level? Join our GitHub organization 
               and start contributing to real projects that make a difference.
+            </p>
+
+            <p className="text-sm text-muted-foreground mt-4">
+              [Features : Coming Soon*]
             </p>
           </div>
 
