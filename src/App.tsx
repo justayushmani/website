@@ -16,7 +16,7 @@ import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
 import CodeOfConduct from "./pages/CodeOfConduct";
 import TermsOfService from "./pages/TermsOfService";
-
+import CountdownGate from "./components/Countdown";
 
 const queryClient = new QueryClient();
 
@@ -26,28 +26,28 @@ const App = () => (
       <Toaster />
       <Sonner />
       <HashRouter>
-        
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/join-us" element={<Domains />} />
-          <Route path="/NotFound" element={<NotFound />} />
-          <Route path="/community" element={<Community />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/codeofconduct" element={<CodeOfConduct />} />
-          <Route path="/termsofservice" element={<TermsOfService />} />
+        <CountdownGate>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/join-us" element={<Domains />} />
+            <Route path="/NotFound" element={<NotFound />} />
+            <Route path="/community" element={<Community />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/codeofconduct" element={<CodeOfConduct />} />
+            <Route path="/termsofservice" element={<TermsOfService />} />
 
-          {/* Add any other custom routes here */}
-          
-          {/* Catch-all route for 404 Not Found */}
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        
+            {/* Add any other custom routes here */}
+
+            {/* Catch-all route for 404 Not Found */}
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </CountdownGate>
       </HashRouter>
     </TooltipProvider>
   </QueryClientProvider>
