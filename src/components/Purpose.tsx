@@ -95,8 +95,7 @@ const Purpose = () => {
               Most chase the top 1%.<br />
               We’re here for the 99% — the relentless, the overlooked, the ones still building. <br/>
               Because brilliance isn’t born in spotlights — it’s forged in silence, grit, and late nights. <br />
-              ZenYukti doesn’t filter talent. <br />
-              It fuels it.
+              ZenYukti doesn’t filter talent. It fuels it.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm font-medium">
               <span className="text-neon-green">📈 Growth for All</span>

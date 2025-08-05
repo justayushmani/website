@@ -15,7 +15,7 @@ const Hero = () => {
     let mouseX = 0;
     let mouseY = 0;
 
-    // Set canvas size
+    // Set canvas size 
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
