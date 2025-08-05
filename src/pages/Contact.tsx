@@ -14,8 +14,8 @@ const Contact = () => {
       icon: Mail,
       title: "Email Us",
       description: "Get in touch via email",
-      value: "zenyukti@ayushhardeniya.site",
-      href: "mailto:zenyukti@ayushhardeniya.site"
+      value: "teamzenyukti@gmail.com",
+      href: "mailto:teamzenyukti@gmail.com"
     },
     {
       icon: SiDiscord,
