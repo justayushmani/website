@@ -207,13 +207,20 @@ const domains = [
           </div>
 
           <div className="text-center">
-            <Button 
+          <Button 
+              asChild
               size="lg" 
-              className="bg-neon-green hover:bg-neon-green/90 shadow-neon group"
+              variant="outline" 
+              className="bg-neon-green hover:bg-neon-purple shadow-neon group"
             >
+              <a
+              href="https://github.com/ZenYukti"
+              target="_blank"
+              rel="noopener noreferrer">
               <Github className="w-5 h-5 mr-3" />
               Join GitHub Organization
               <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
           </div>
         </div>
