@@ -14,7 +14,7 @@
 [![Code Size](https://img.shields.io/github/languages/code-size/ZenYukti/zenyukti.github.io?style=flat-square)](https://github.com/ZenYukti/zenyukti.github.io)
 [![Last Commit](https://img.shields.io/github/last-commit/ZenYukti/zenyukti.github.io?style=flat-square)](https://github.com/ZenYukti/zenyukti.github.io/commits/main)
 
-![Website Visitors](https://api.countapi.xyz/hit/zenyukti.github.io/visits?style=flat-square)
+[![Website Visitors](https://api.countapi.xyz/hit/zenyukti.github.io/visits?style=flat-square)]
 
 
 
