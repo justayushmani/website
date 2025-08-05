@@ -147,9 +147,9 @@ const Community = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-
-                <Whatsapp className="w-5 h-5 mr-2" />
-                WhatsApp Group
+                  <Whatsapp className="w-5 h-5 mr-2" />
+                  WhatsApp Group
+                </a>
               </Button>
             </div>
           </div>
