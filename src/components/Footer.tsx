@@ -48,7 +48,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-11 h-11 rounded-full overflow-hidden">
                 <img
-                  src="public\assets\zenyukti-logo.png"
+                  src="/assets/zenyukti-logo.png"
                   alt="zenyukti_logo"
                   className="w-full h-full object-cover"
                 />
