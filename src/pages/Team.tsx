@@ -204,7 +204,7 @@ const Team = () => {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-neon-blue mb-2">
-                  550+
+                  600+
                 </div>
                 <div className="text-muted-foreground">Community Members</div>
               </div>
