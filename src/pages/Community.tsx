@@ -146,6 +146,7 @@ const Community = () => {
                   href="https://chat.whatsapp.com/HTwSFGYUNIb6m75IAzCxfk?mode=ac_t"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="inline-flex items-center"
                 >
                   <Whatsapp className="w-5 h-5 mr-2" />
                   WhatsApp Group
