@@ -142,6 +142,12 @@ const Community = () => {
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-white"
               >
+                <a
+                  href="https://chat.whatsapp.com/HTwSFGYUNIb6m75IAzCxfk?mode=ac_t"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+
                 <Whatsapp className="w-5 h-5 mr-2" />
                 WhatsApp Group
               </Button>
