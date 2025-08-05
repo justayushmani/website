@@ -43,6 +43,7 @@ interface TeamMember {
   bio?: string;
   isFounder?: boolean;
   department?: string;
+  twitter?: string;
 }
 
 /**
@@ -651,7 +652,7 @@ const Team = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:zenyukti@ayushhardeniya.site"
+                    href="mailto:teamzenyukti@gmail.com"
                     className="inline-flex items-center justify-center text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 px-6 py-2 h-11 rounded-md bg-white text-primary hover:bg-white/90"
                   >
                     <Mail className="w-5 h-5 mr-2" />

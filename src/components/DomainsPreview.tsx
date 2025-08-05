@@ -4,44 +4,41 @@ import { Badge } from "@/components/ui/badge";
 import { 
   GraduationCap, 
   HandHelping, 
-  	Users, 
-  MessageCircle, 
-  Github, 
+  Users, 
   ArrowRight,
   Star,
   GitBranch,
   Zap
 } from "lucide-react";
+import { Github } from "./icons";
 
 const DomainsPreview = () => {
 const domains = [
   {
     title: "Members",
-    icon: Users ,
-    description: "Experienced professionals guiding and empowering learners.",
+    icon: Users,
+    description: "Join our growing community of learners and builders. Connect, collaborate, and grow together.",
     members: "550+",
-    /*projects: "5",*/
     skills: ["Learning Mindset", "Discussion", "Engagement", "Community Building"],
-    color: "neon-orange"
+    color: "neon-green"
   },
   {
     title: "Contributors",
     icon: HandHelping,
-    description: "Collaborative teams building impactful tech and community solutions.",
+    description: "Collaborate on real-world projects, sharpen your skills, and grow your portfolio.",
     members: "10+",
-    /*projects: "20",*/
     skills: ["Open Source Contribution", "Problem Solving", "Issue Tracking", "Testing & Debugging"],
     color: "neon-purple"
   },
   {
     title: "Mentors",
-    icon: 	GraduationCap,
-    description: "Creative and passionate individuals contributing across domains.",
+    icon: GraduationCap,
+    description: "Share your expertise and empower future innovators through meaningful mentorship.",
     members: "...",
-   /* projects: "25",*/
     skills: ["Guidance", "Code Review", "Career Mentoring", "Issue Tracking"],
     color: "neon-blue"
   }
+  
 ];
 
   const contributorFeatures = [
@@ -150,7 +147,7 @@ const domains = [
                       className={`border-${domain.color} text-${domain.color} hover:bg-${domain.color} hover:text-white`}
                     >
                      yaha pr link daalna h!!
-                      <MessageCircle className="w-4 h-4 mr-2" />
+                      <Discord className="w-4 h-4 mr-2" />
                       Join WhatsApp
                     </Button>
 
@@ -210,13 +207,20 @@ const domains = [
           </div>
 
           <div className="text-center">
-            <Button 
+          <Button 
+              asChild
               size="lg" 
-              className="bg-neon-green hover:bg-neon-green/90 shadow-neon group"
+              variant="outline" 
+              className="bg-neon-green hover:bg-neon-purple shadow-neon group"
             >
+              <a
+              href="https://github.com/ZenYukti"
+              target="_blank"
+              rel="noopener noreferrer">
               <Github className="w-5 h-5 mr-3" />
               Join GitHub Organization
               <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageCircle, Github, Users, Code, Share2 } from "lucide-react";
+import { ArrowRight, Share2 } from "lucide-react";
 import { useEffect, useRef } from 'react';
+import { Discord , Github , Users , Code} from "./icons";
 
 const Hero = () => {
   const canvasRef = useRef(null);
@@ -352,30 +353,41 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button 
+              asChild
               size="lg" 
               className="bg-neon-green hover:bg-neon-green/90 shadow-neon text-lg px-8 py-6 group"
-              onClick={() => window.open('https://discord.gg/HuBa9r33kW', '_blank')}
+              
             >
-              <MessageCircle className="w-5 h-5 mr-3" />
-              Join Discord
+              <a
+               href="https://discord.gg/HuBa9r33kW"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Discord className="w-5 h-5 mr-3" />Join Discord
               <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
+            </a>
             </Button>
             <Button 
+              asChild
               size="lg" 
               variant="outline" 
               className="border-neon-purple text-neon-purple hover:bg-neon-purple hover:text-white text-lg px-8 py-6 shadow-purple group"
-              onClick={() => window.open('https://github.com/ZenYukti', '_blank')}
             >
+              <a
+              href="https://github.com/ZenYukti"
+              target="_blank"
+              rel="noopener noreferrer">
               <Github className="w-5 h-5 mr-3" />
               GitHub
               <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
           </div>
 
           {/* Feature Pills */}
           <div className="flex flex-wrap justify-center gap-4">
             <div className="flex items-center space-x-2 bg-secondary/50 rounded-full px-4 py-2 border border-border">
-              <Users className="w-4 h-4 text-neon-green" />
+              <Users className="w-4 h-4 " />
               <span className="text-sm font-medium">Community Driven</span>
             </div>
             <div className="flex items-center space-x-2 bg-secondary/50 rounded-full px-4 py-2 border border-border">
