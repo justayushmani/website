@@ -13,13 +13,18 @@ import {
   Instagram,
   Linkedin,
   X,
-  Users,
   Whatsapp,
   Discord,
 } from "@/components/icons";
 import { useEffect, useState } from "react";
 import EventCard from "@/components/EventCard";
 
+// Swiper imports
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Community = () => {
   const socialPlatforms = [
@@ -48,6 +53,7 @@ const Community = () => {
       url: "https://x.com/zenyukti",
     },
   ];
+
   const [events, setEvents] = useState<{ upcoming: any[]; past: any[] }>({
     upcoming: [],
     past: [],
@@ -104,6 +110,13 @@ const Community = () => {
     },
   ];
 
+  // Sample images for carousel (place them in /public/images/community/)
+  const carouselImages = [
+    "/images/community1.jpg",
+    "/images/community2.jpg",
+    "/images/community3.jpg",
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -115,7 +128,6 @@ const Community = () => {
             <h1 className="font-display font-bold text-5xl sm:text-6xl lg:text-7xl leading-tight mb-6">
               <span className="text-foreground">Our </span>
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                {" "}
                 Community
               </span>
             </h1>
@@ -156,6 +168,32 @@ const Community = () => {
           </div>
         </section>
 
+        {/* Carousel Section */}
+        <section className="py-10 px-4 bg-dark-surface/50">
+          <div className="container mx-auto">
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={30}
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3000 }}
+              loop={true}
+              className="rounded-xl overflow-hidden shadow-lg"
+            >
+              {carouselImages.map((src, index) => (
+                <SwiperSlide key={index}>
+                  <img
+                    src={src}
+                    alt={`Community slide ${index + 1}`}
+                    className="w-full h-[400px] object-cover"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </section>
+
         {/* Community Stats */}
         <section className="py-20 px-4 bg-dark-surface/50">
           <div className="container mx-auto">
@@ -169,11 +207,11 @@ const Community = () => {
                 <p className="text-muted-foreground">Active Contributors</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="text-3xl font-bold text-primary mb-2">...</h3>
+                <h3 className="text-3xl font-bold text-primary mb-2">5+</h3>
                 <p className="text-muted-foreground">Projects Completed</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="text-3xl font-bold text-primary mb-2">...</h3>
+                <h3 className="text-3xl font-bold text-primary mb-2">3</h3>
                 <p className="text-muted-foreground">Mentors</p>
               </div>
             </div>
@@ -186,7 +224,6 @@ const Community = () => {
             <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-12">
               Follow Our Journey
             </h2>
-
             <div className="grid md:grid-cols-3 gap-8">
               {socialPlatforms.map((platform, index) => {
                 const Icon = platform.icon;
@@ -208,7 +245,7 @@ const Community = () => {
                     </CardHeader>
                     <CardContent className="text-center">
                       <div className="text-3xl font-bold text-primary mb-4">
-                        {/*{platform.followers} */}
+                        {platform.followers}
                       </div>
                       <a
                         href={platform.url}
@@ -234,7 +271,6 @@ const Community = () => {
             <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-12">
               Community Team
             </h2>
-
             <div className="grid md:grid-cols-3 gap-8">
               {teamRoles.map((team, index) => (
                 <Card key={index} className="bg-card border-border">
@@ -267,9 +303,11 @@ const Community = () => {
             </div>
           </div>
         </section>
+
         <ScrollToHash />
+
         {/* Events Section */}
-        <section id="events"className="py-20 px-4">
+        <section id="events" className="py-20 px-4">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
               Upcoming Events
@@ -289,19 +327,19 @@ const Community = () => {
                     <EventCard key={index} {...event} />
                   ))}
                 </div>
+              </>
+            )}
 
-                {events.past.length > 0 && (
-                  <>
-                    <h3 className="text-2xl font-semibold text-foreground mb-4 text-center">
-                      Past Events
-                    </h3>
-                    <div className="flex flex-wrap justify-center gap-6 max-w-7xl mx-auto mb-16">
-                      {events.past.map((event, index) => (
-                        <EventCard key={index} {...event} />
-                      ))}
-                    </div>
-                  </>
-                )}
+            {events.past.length > 0 && (
+              <>
+                <h3 className="text-2xl font-semibold text-foreground mb-4 text-center">
+                  Past Events
+                </h3>
+                <div className="flex flex-wrap justify-center gap-6 max-w-7xl mx-auto mb-16">
+                  {events.past.map((event, index) => (
+                    <EventCard key={index} {...event} />
+                  ))}
+                </div>
               </>
             )}
           </div>
