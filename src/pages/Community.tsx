@@ -19,7 +19,16 @@ import {
 } from "@/components/icons";
 import { useEffect, useState } from "react";
 import EventCard from "@/components/EventCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
+const carouselImages = [
+  "/firstMeetUpImages/community.jpg",
+  "/firstMeetUpImages/community.jpg",
+  "/firstMeetUpImages/community.jpg",
+];
 
 const Community = () => {
   const socialPlatforms = [
@@ -153,6 +162,29 @@ const Community = () => {
                 </a>
               </Button>
             </div>
+          </div>
+        </section>
+
+        {/* Carousel Section */}
+        <section className="py-10 px-4">
+          <div className="container mx-auto">
+            <Swiper
+              modules={[Autoplay, Pagination]}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              pagination={{ clickable: true }}
+              loop={true}
+              className="rounded-xl shadow-lg"
+            >
+              {carouselImages.map((src, idx) => (
+                <SwiperSlide key={idx}>
+                  <img
+                    src={src}
+                    alt={`Community ${idx + 1}`}
+                    className="w-full h-80 object-cover rounded-xl border border-border"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </section>
 
@@ -314,3 +346,4 @@ const Community = () => {
 };
 
 export default Community;
+
